@@ -20,3 +20,16 @@ $ make package-install
 $ brain-even
 ```
 [![asciicast](https://asciinema.org/a/QxL3C5HDwqL6LfsSKLXWhOMnA.svg)](https://asciinema.org/a/QxL3C5HDwqL6LfsSKLXWhOMnA)
+
+## Brain-Calc Game
+
+```sh
+$ brain-calc
+```
+[![asciicast](https://asciinema.org/a/bUxTjzCDR4JUYpuUidC8ge54n.svg)](https://asciinema.org/a/bUxTjzCDR4JUYpuUidC8ge54n)
+
+## Uninstall
+
+```sh
+$ pip uninstall hexlet-code
+```
