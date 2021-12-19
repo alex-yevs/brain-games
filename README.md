@@ -28,6 +28,13 @@ $ brain-calc
 ```
 [![asciicast](https://asciinema.org/a/bUxTjzCDR4JUYpuUidC8ge54n.svg)](https://asciinema.org/a/bUxTjzCDR4JUYpuUidC8ge54n)
 
+## Brain-GCD Game
+
+```sh
+$ brain-gcd
+```
+[![asciicast](https://asciinema.org/a/ROGZtDSsquhiuhbliPXNGy4Bd.svg)](https://asciinema.org/a/ROGZtDSsquhiuhbliPXNGy4Bd)
+
 ## Uninstall
 
 ```sh
