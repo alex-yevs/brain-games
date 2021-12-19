@@ -42,6 +42,13 @@ $ brain-progression
 ```
 [![asciicast](https://asciinema.org/a/5A6y1XXksTHkVQYJ4PRyUHkDc.svg)](https://asciinema.org/a/5A6y1XXksTHkVQYJ4PRyUHkDc)
 
+## Brain-Prime Game
+
+```sh
+$ brain-prime
+```
+[![asciicast](https://asciinema.org/a/BkBIVarUrC1157HZWuifKn3Qb.svg)](https://asciinema.org/a/BkBIVarUrC1157HZWuifKn3Qb)
+
 ## Uninstall
 
 ```sh
