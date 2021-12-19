@@ -35,6 +35,13 @@ $ brain-gcd
 ```
 [![asciicast](https://asciinema.org/a/ROGZtDSsquhiuhbliPXNGy4Bd.svg)](https://asciinema.org/a/ROGZtDSsquhiuhbliPXNGy4Bd)
 
+## Brain-Progression Game
+
+```sh
+$ brain-progression
+```
+[![asciicast](https://asciinema.org/a/5A6y1XXksTHkVQYJ4PRyUHkDc.svg)](https://asciinema.org/a/5A6y1XXksTHkVQYJ4PRyUHkDc)
+
 ## Uninstall
 
 ```sh

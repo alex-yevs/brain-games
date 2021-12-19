@@ -2,7 +2,7 @@
 
 from random import choice, randint
 
-from brain_games.cli import engine
+from brain_games.index import engine
 
 game_description = 'What is the result of the expression?'
 
@@ -40,6 +40,7 @@ def get_gamedata():
 
     question = '{0} {1} {2}'.format(first_num, operator, second_num)
     right_answer = str(calc(first_num, second_num, operator))
+
     return (question, right_answer)
 
 

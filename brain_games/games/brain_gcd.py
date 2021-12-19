@@ -2,7 +2,7 @@
 
 from random import randint
 
-from brain_games.cli import engine
+from brain_games.index import engine
 
 game_description = 'Find the greatest common divisor of the given numbers.'
 
