@@ -4,9 +4,11 @@ from random import randint
 
 from brain_games.index import engine
 
-game_description = (
+GAME_DESCRIPTION = (
     'Answer "yes" if given number is prime. Otherwise answer "no".'
 )
+MIN_NUM = 1
+MAX_NUM = 100
 
 
 def is_prime(num):
@@ -36,7 +38,7 @@ def get_gamedata():
     Returns:
         tuple: a tuple representing a gamedata
     """
-    num = randint(1, 100)
+    num = randint(MIN_NUM, MAX_NUM)
 
     question = num
     right_answer = 'yes' if is_prime(num) else 'no'
@@ -51,4 +53,4 @@ def brain_prime():
     Returns:
         function: a function for execute the brain-prime game
     """
-    return engine(game_description, get_gamedata)
+    return engine(GAME_DESCRIPTION, get_gamedata)

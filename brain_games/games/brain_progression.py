@@ -4,7 +4,10 @@ from random import randint
 
 from brain_games.index import engine
 
-game_description = 'What number is missing in the progression?'
+GAME_DESCRIPTION = 'What number is missing in the progression?'
+MIN_NUM = 1
+MAX_NUM = 10
+PROGRESSION_LENGTH = 10
 
 
 def get_gamedata():
@@ -14,12 +17,12 @@ def get_gamedata():
     Returns:
         tuple: a tuple representing a gamedata
     """
-    start = randint(1, 10)
-    delta = randint(1, 10)
-    progression_length = 10
-    progression = [str(start + delta * i) for i in range(0, progression_length)]
+    start = randint(MIN_NUM, MAX_NUM)
+    delta = randint(MIN_NUM, MAX_NUM)
 
-    random_index = randint(0, progression_length - 1)
+    progression = [str(start + delta * i) for i in range(0, PROGRESSION_LENGTH)]
+
+    random_index = randint(0, PROGRESSION_LENGTH - 1)
     right_answer = progression[random_index]
     progression[random_index] = '..'
     question = ' '.join(progression)
@@ -34,4 +37,4 @@ def brain_progression():
     Returns:
         function: a function for execute the brain-progression game
     """
-    return engine(game_description, get_gamedata)
+    return engine(GAME_DESCRIPTION, get_gamedata)

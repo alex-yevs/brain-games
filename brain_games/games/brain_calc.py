@@ -4,7 +4,10 @@ from random import choice, randint
 
 from brain_games.index import engine
 
-game_description = 'What is the result of the expression?'
+GAME_DESCRIPTION = 'What is the result of the expression?'
+MIN_NUM = 1
+MAX_NUM = 10
+OPERATORS = ('+', '-', '*')
 
 
 def calc(first_num, second_num, operator):
@@ -33,10 +36,9 @@ def get_gamedata():
     Returns:
         tuple: a tuple representing a gamedata
     """
-    first_num = randint(1, 10)
-    second_num = randint(1, 10)
-    operators = ('+', '-', '*')
-    operator = choice(operators)
+    first_num = randint(MIN_NUM, MAX_NUM)
+    second_num = randint(MIN_NUM, MAX_NUM)
+    operator = choice(OPERATORS)
 
     question = '{0} {1} {2}'.format(first_num, operator, second_num)
     right_answer = str(calc(first_num, second_num, operator))
@@ -51,4 +53,4 @@ def brain_calc():
     Returns:
         function: a function for execute the brain-calc game
     """
-    return engine(game_description, get_gamedata)
+    return engine(GAME_DESCRIPTION, get_gamedata)

@@ -2,6 +2,8 @@
 
 import prompt
 
+FINAL_STEP = 3
+
 
 def engine(game_description, get_gamedata):
     """
@@ -17,9 +19,8 @@ def engine(game_description, get_gamedata):
     print(game_description)
 
     game_step = 1
-    final_step = 3
 
-    while game_step <= final_step:
+    while game_step <= FINAL_STEP:
         (question, right_answer) = get_gamedata()
         print('Question: {0}'.format(question))
         user_answer = prompt.string('Your answer: ')

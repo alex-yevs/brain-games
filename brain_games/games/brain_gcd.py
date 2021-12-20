@@ -4,7 +4,9 @@ from random import randint
 
 from brain_games.index import engine
 
-game_description = 'Find the greatest common divisor of the given numbers.'
+GAME_DESCRIPTION = 'Find the greatest common divisor of the given numbers.'
+MIN_NUM = 1
+MAX_NUM = 100
 
 
 def get_gcd(first_num, second_num):
@@ -31,8 +33,8 @@ def get_gamedata():
     Returns:
         tuple: a tuple representing a gamedata
     """
-    first_num = randint(1, 100)
-    second_num = randint(1, 100)
+    first_num = randint(MIN_NUM, MAX_NUM)
+    second_num = randint(MIN_NUM, MAX_NUM)
 
     question = '{0} {1}'.format(first_num, second_num)
     right_answer = str(get_gcd(first_num, second_num))
@@ -47,4 +49,4 @@ def brain_gcd():
     Returns:
         function: a function for execute the brain-gcd game
     """
-    return engine(game_description, get_gamedata)
+    return engine(GAME_DESCRIPTION, get_gamedata)

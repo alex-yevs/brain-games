@@ -4,7 +4,9 @@ from random import randint
 
 from brain_games.index import engine
 
-game_description = 'Answer "yes" if the number is even, otherwise answer "no"'
+GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no"'
+MIN_NUM = 0
+MAX_NUM = 100
 
 
 def is_even(num):
@@ -27,7 +29,7 @@ def get_gamedata():
     Returns:
         tuple: a tuple representing a gamedata
     """
-    question = randint(0, 100)
+    question = randint(MIN_NUM, MAX_NUM)
     right_answer = 'yes' if is_even(question) else 'no'
 
     return (question, right_answer)
@@ -40,4 +42,4 @@ def brain_even():
     Returns:
         function: a function for execute the brain-even game
     """
-    return engine(game_description, get_gamedata)
+    return engine(GAME_DESCRIPTION, get_gamedata)
