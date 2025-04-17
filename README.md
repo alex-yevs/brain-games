@@ -5,7 +5,7 @@
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
 # Brain-Games
-Several games for brain training :)
+Several console games for brain training :)
 
 ## Setup
 
